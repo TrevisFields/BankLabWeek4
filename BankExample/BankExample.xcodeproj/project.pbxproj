@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6EDE6A921E6DD6BA0030E89D /* Customer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE6A911E6DD6BA0030E89D /* Customer.cpp */; };
 		6EDE6A941E6DD8BF0030E89D /* BankMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE6A931E6DD8BF0030E89D /* BankMain.cpp */; };
+		6EDE6A971E6DDA6F0030E89D /* Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE6A961E6DDA6F0030E89D /* Account.cpp */; };
+		6EDE6A9A1E6DDCAD0030E89D /* Bank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE6A991E6DDCAD0030E89D /* Bank.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		6EDE6A901E6DD6250030E89D /* Customer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
 		6EDE6A911E6DD6BA0030E89D /* Customer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Customer.cpp; sourceTree = "<group>"; };
 		6EDE6A931E6DD8BF0030E89D /* BankMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BankMain.cpp; sourceTree = "<group>"; };
+		6EDE6A951E6DD9E50030E89D /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		6EDE6A961E6DDA6F0030E89D /* Account.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Account.cpp; sourceTree = "<group>"; };
+		6EDE6A981E6DDC9D0030E89D /* Bank.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bank.h; sourceTree = "<group>"; };
+		6EDE6A991E6DDCAD0030E89D /* Bank.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bank.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 				6EDE6A901E6DD6250030E89D /* Customer.h */,
 				6EDE6A911E6DD6BA0030E89D /* Customer.cpp */,
 				6EDE6A931E6DD8BF0030E89D /* BankMain.cpp */,
+				6EDE6A951E6DD9E50030E89D /* Account.h */,
+				6EDE6A961E6DDA6F0030E89D /* Account.cpp */,
+				6EDE6A981E6DDC9D0030E89D /* Bank.h */,
+				6EDE6A991E6DDCAD0030E89D /* Bank.cpp */,
 			);
 			path = BankExample;
 			sourceTree = "<group>";
@@ -125,6 +135,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EDE6A941E6DD8BF0030E89D /* BankMain.cpp in Sources */,
+				6EDE6A9A1E6DDCAD0030E89D /* Bank.cpp in Sources */,
+				6EDE6A971E6DDA6F0030E89D /* Account.cpp in Sources */,
 				6EDE6A921E6DD6BA0030E89D /* Customer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
