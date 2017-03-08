@@ -10,7 +10,7 @@ Customer::~Customer()
   
 }
 
-std::string Customer::getFullName()
+std::string Customer::getName()
 {
   return _lastName + ", " + _firstName;
 }

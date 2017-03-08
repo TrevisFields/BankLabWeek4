@@ -1,16 +1,20 @@
 #pragma once
 #include "Customer.h"
+#include <queue>
 class Account
 {
 private:
   int _accountNumber;
-  int _balanceInPennies = 0;
+  int _balance = 0;
   Customer _accountOwner;
+  std::queue<std::string> *_transactionlog = new std::queue<std::string>();
 public:
   Account(Customer customer, int accountNumber);
   ~Account();
   
-  void Deposit(int numberOfPennies);
-  void Withdraw(int numberOfPennies);
-  int getBalance();
+  std::string GetAccountInfo();
+  bool Deposit(int pennies);
+  bool Withdraw(int pennies);
+  int GetBalanceInPennies();
+  std::string ShowTransactionLog();
 };

@@ -9,17 +9,45 @@ Account::~Account()
   
 }
 
-void Account::Deposit(int numberOfPennies)
+std::string Account::GetAccountInfo()
 {
-  _balanceInPennies += numberOfPennies;
+  return _accountOwner.getName();
 }
 
-void Account::Withdraw(int numberOfPennies)
+bool Account::Deposit(int pennies)
 {
-  _balanceInPennies -= numberOfPennies;
+  if (pennies > 0)
+	 {
+		_transactionlog->push(_accountOwner.getName() + " deposited $" + std::to_string(pennies/100));
+		_balance += pennies;
+		return true;
+	 }
+  return false;
 }
 
-int Account::getBalance()
+bool Account::Withdraw(int pennies)
 {
-  return 0;
+  if (pennies > 0)
+	 {
+		_balance -= pennies;
+		_transactionlog->push(_accountOwner.getName() + "withdrew $" + std::to_string(pennies/100));
+		return true;
+	 }
+  return false;
+}
+
+int Account::GetBalanceInPennies()
+{
+  return _balance;
+}
+
+std::string Account::ShowTransactionLog()
+{
+  std::string output = "Transaction Log \n";
+  while(!_transactionlog->empty())
+	 {
+		output += _transactionlog->front() + "\n";
+		_transactionlog->pop();
+	 }
+  return output;
 }

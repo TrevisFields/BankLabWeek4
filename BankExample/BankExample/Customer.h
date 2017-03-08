@@ -6,9 +6,10 @@ class Customer
 private:
   std::string _firstName;
   std::string _lastName;
+  int _id;
 public:
-  std::string getFullName();
-  
   Customer(std::string firstName, std::string lastName);
   ~Customer();
+  
+  std::string getName();
 };
